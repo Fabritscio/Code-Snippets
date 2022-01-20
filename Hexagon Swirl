@@ -1,0 +1,21 @@
+from turtle import *
+
+setup(width=800,height=600)
+speed(0)
+bgcolor("black")
+
+colors= ["red", "blue", "purple", "green", "maroon", "yellow"]
+
+for x in range(240):
+
+   color(colors[x%6])
+   width(x/100+1)
+   forward(x)
+   left(59)
+
+forward(20)
+penup()
+color("white")
+goto(-30, -300)
+write("Please like and subsribe to my channel",align="center",font=("Arial",12,"Normal"))
+hideturtle()
